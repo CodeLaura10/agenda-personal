@@ -1,0 +1,103 @@
+.panel-hoy {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--color-superficie);
+  box-shadow: var(--sombra);
+  text-align: left;
+}
+
+.panel-hoy-encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.panel-hoy h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.fecha-hoy {
+  margin-left: 6px;
+  color: var(--color-texto-suave);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.progreso-hoy {
+  color: var(--color-acento);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lista-hoy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-hoy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-left: 4px solid var(--color-categoria, var(--color-acento));
+  border-radius: 10px;
+  background-color: var(--color-fondo);
+}
+
+.item-hoy input {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--color-acento);
+  cursor: pointer;
+}
+
+.item-hoy-texto {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.item-hoy-texto:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.item-hoy-hora {
+  color: var(--color-texto-suave);
+  font-size: 0.85rem;
+}
+
+.item-hoy-titulo {
+  font-weight: 600;
+}
+
+.item-hoy-descripcion {
+  margin-top: 2px;
+  color: var(--color-texto-suave);
+  font-size: 0.85rem;
+  white-space: pre-line;
+}
+
+.item-hoy.completada .item-hoy-titulo {
+  color: var(--color-texto-suave);
+  text-decoration: line-through;
+}
